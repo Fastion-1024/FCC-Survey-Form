@@ -1,15 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>The Wheel of Time - Survey</title>
-        <link rel="stylesheet" type="text/css" href="./CSS/index.css">
-        <meta name="description" content="The Wheel of Time - Survey Form">
-        <meta name="author" content="David Price">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    
-    <body>
-    
-    </body>
-</html>
 
+<head>
+    <title>The Wheel of Time - Survey</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+    <meta name="description" content="The Wheel of Time - Survey Form">
+    <meta name="author" content="David Price">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">The Wheel of Time - Survey</h1>
+        <p id="description">We wish to collate the various preferences of readers of Robert Jordan's "A Wheel of Time"
+            series</p>
+        <p>Thank you for taking the time to take this short survey</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age<span class="optional">(optional)</span></label>
+                <input type="number" name="age" id="number" min="8" max="99" class="form-control" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <p>What was your favourite book?</p>
+                <select id="dropdown" name="book" class="form-control" required>
+                    <option disabled selected value>Select favourite book</option>
+                    <option value="a-new-spring">A New Spring</option>
+                    <option value="the-eye-of-the-world">The Eye of the World</option>
+                    <option value="the-great-hunt">The Great Hunt</option>
+                    <option value="the-dragon-reborn">The Dragon Reborn</option>
+                    <option value="the-shadow-rising">The Shadow Rising</option>
+                    <option value="the-fires-of-heaven">The Fires of Heaven</option>
+                    <option value="lords=of-chaos">Lords of Chaos</option>
+                    <option value="a-crown-of-swords">A Crown of Swords</option>
+                    <option value="the-path-of-daggers">The Path of Daggers</option>
+                    <option value="winters-heart">Winter's Heart</option>
+                    <option value="crossroads-of-twilight">Crossroads of Twilight</option>
+                    <option value="knife-of-dreams">Knife Of Dreams</option>
+                    <option value="the-gathering-storm">The Gathering Storm</option>
+                    <option value="towers-of-midnight">Towers of Midnight</option>
+                    <option value="memory-of-light">Memory Of Light</option>
+                </select>
+            </div>
+
+            <p>Please rate each book on a scale from 1 - 10</p>
+            <div class="form-group">
+                <p>A New Spring</p>
+                <label>
+                    <input name="book0-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book0-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book0-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book0-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book0-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book0-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book0-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book0-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book0-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book0-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Eye of the World</p>
+                <label>
+                    <input name="book1-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book1-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book1-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book1-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book1-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book1-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book1-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book1-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book1-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book1-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Great Hunt</p>
+                <label>
+                    <input name="book2-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book2-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book2-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book2-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book2-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book2-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book2-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book2-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book2-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book2-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Dragon Reborn</p>
+                <label>
+                    <input name="book3-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book3-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book3-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book3-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book3-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book3-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book3-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book3-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book3-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book3-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Shadow Rising</p>
+                <label>
+                    <input name="book4-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book4-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book4-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book4-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book4-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book4-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book4-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book4-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book4-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book4-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Fires of Heaven</p>
+                <label>
+                    <input name="book5-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book5-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book5-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book5-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book5-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book5-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book5-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book5-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book5-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book5-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Lords of Chaos</p>
+                <label>
+                    <input name="book6-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book6-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book6-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book6-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book6-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book6-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book6-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book6-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book6-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book6-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>A Crown of Swords</p>
+                <label>
+                    <input name="book7-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book7-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book7-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book7-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book7-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book7-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book7-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book7-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book7-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book7-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Path of Daggers</p>
+                <label>
+                    <input name="book8-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book8-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book8-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book8-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book8-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book8-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book8-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book8-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book8-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book8-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Winter's Heart</p>
+                <label>
+                    <input name="book9-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book9-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book9-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book9-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book9-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book9-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book9-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book9-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book9-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book9-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Crossroads of Twilight</p>
+                <label>
+                    <input name="book10-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book10-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book10-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book10-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book10-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book10-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book10-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book10-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book10-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book10-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Knife of Dreams</p>
+                <label>
+                    <input name="book11-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book11-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book11-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book11-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book11-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book11-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book11-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book11-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book11-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book11-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>The Gathering Storm</p>
+                <label>
+                    <input name="book12-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book12-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book12-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book12-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book12-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book12-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book12-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book12-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book12-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book12-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Towers of Midnight</p>
+                <label>
+                    <input name="book13-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book13-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book13-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book13-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book13-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book13-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book13-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book13-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book13-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book13-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+            <div class="form-group">
+                <p>Memory of Light</p>
+                <label>
+                    <input name="book14-rating" value="1" type="radio" class="input-radio" />1</label>
+                <label>
+                    <input name="book14-rating" value="2" type="radio" class="input-radio" />2</label>
+                <label>
+                    <input name="book14-rating" value="3" type="radio" class="input-radio" />3</label>
+                <label>
+                    <input name="book14-rating" value="4" type="radio" class="input-radio" />4</label>
+                <label>
+                    <input name="book14-rating" value="5" type="radio" class="input-radio" />5</label>
+                <label>
+                    <input name="book14-rating" value="6" type="radio" class="input-radio" />6</label>
+                <label>
+                    <input name="book14-rating" value="7" type="radio" class="input-radio" />7</label>
+                <label>
+                    <input name="book14-rating" value="8" type="radio" class="input-radio" />8</label>
+                <label>
+                    <input name="book14-rating" value="9" type="radio" class="input-radio" />9</label>
+                <label>
+                    <input name="book14-rating" value="10" type="radio" class="input-radio" />10</label>
+            </div>
+
+            <div class="form-group">
+                <p>Who is your favourite male character? <span class="optional">(Please check all that apply)</p>
+                <label>
+                    <input name="favourite-male" value="rand-al-thor" type="checkbox" class="input-checkbox" />Rand
+                    al'Thor</label>
+                <label>
+                    <input name="favourite-male" value="perrin-aybara" type="checkbox" class="input-checkbox" />Perrin
+                    Aybara</label>
+                <label>
+                    <input name="favourite-male" value="matrim-cauthon" type="checkbox" class="input-checkbox" />Matrim
+                    Cauthon</label>
+                <label>
+                    <input name="favourite-male" value="al-lan-mandragoran" type="checkbox"
+                        class="input-checkbox" />Al'Lan Mandragoran</label>
+                <label>
+                    <input name="favourite-male" value="thomdril-merrilin" type="checkbox"
+                        class="input-checkbox" />Thomdril Merrilin</label>
+                <label>
+                    <input name="favourite-male" value="logain-ablar" type="checkbox"
+                        class="input-checkbox" />Logain-Ablar</label>
+                <label>
+                    <input name="favourite-male" value="gareth-bryne" type="checkbox" class="input-checkbox" />Gareth
+                    Bryne</label>
+                <label>
+                    <input name="favourite-male" value="uno-nomesta" type="checkbox" class="input-checkbox" />Uno
+                    Nomesta</label>
+            </div>
+
+            <div class="form-group">
+                <p>Who is your favourite female character? <span class="optional">(Please check all that apply)</p>
+                <label>
+                    <input name="favourite-female" value="egwene-al-vere" type="checkbox"
+                        class="input-checkbox" />Egwene al'Vere</label>
+                <label>
+                    <input name="favourite-female" value="elayne-trakand" type="checkbox"
+                        class="input-checkbox" />Elayne Trakand</label>
+                <label>
+                    <input name="favourite-female" value="nynaeve-al-meara" type="checkbox"
+                        class="input-checkbox" />Nynaeve al'Meara</label>
+                <label>
+                    <input name="favourite-female" value="aviendha" type="checkbox"
+                        class="input-checkbox" />Aviendha</label>
+                <label>
+                    <input name="favourite-female" value="elmindreda-farshaw" type="checkbox"
+                        class="input-checkbox" />Elmindreda Farshaw (Min)</label>
+                <label>
+                    <input name="favourite-female" value="moiraine-damodred" type="checkbox"
+                        class="input-checkbox" />Moiraine Damodred</label>
+                <label>
+                    <input name="favourite-female" value="siuan-sanche" type="checkbox" class="input-checkbox" />Siuan
+                    Sanche</label>
+                <label>
+                    <input name="favourite-female" value="furtuona-athaem-devi-paendrag" type="checkbox"
+                        class="input-checkbox" />Fortuona Athaem Devi Paendrag</label>
+                <label>
+                    <input name="favourite-female" value="berelain-sur-paendrag-paeron" type="checkbox"
+                        class="input-checkbox" />Berelain sur Paendrag Paeron</label>
+                <label>
+                    <input name="favourite-female" value="zarine-ni-bashere" type="checkbox"
+                        class="input-checkbox" />Zarine ni Bashere (Faile)</label>
+            </div>
+
+            <div class="form-group">
+                <p>Who is your favourite Forsaken? <span class="optional">(Please check all that apply)</span></p>
+                <label>
+                    <input name="favourite-forsaken" value="ishamael" type="checkbox"
+                        class="input-checkbox" />Ishamael</label>
+                <label>
+                    <input name="favourite-forsaken" value="rahvin" type="checkbox"
+                        class="input-checkbox" />Rahvin</label>
+                <label>
+                    <input name="favourite-forsaken" value="demandred" type="checkbox"
+                        class="input-checkbox" />Demandred</label>
+                <label>
+                    <input name="favourite-forsaken" value="sammael" type="checkbox"
+                        class="input-checkbox" />Sammael</label>
+                <label>
+                    <input name="favourite-forsaken" value="aginor" type="checkbox"
+                        class="input-checkbox" />Aginor</label>
+                <label>
+                    <input name="favourite-forsaken" value="balthamel" type="checkbox"
+                        class="input-checkbox" />Balthamel</label>
+                <label>
+                    <input name="favourite-forsaken" value="asmodean" type="checkbox"
+                        class="input-checkbox" />Asmodean</label>
+                <label>
+                    <input name="favourite-forsaken" value="belal" type="checkbox"
+                        class="input-checkbox" />Be'lal</label>
+                <label>
+                    <input name="favourite-forsaken" value="lanfear" type="checkbox"
+                        class="input-checkbox" />Lanfear</label>
+                <label>
+                    <input name="favourite-forsaken" value="semirhage" type="checkbox"
+                        class="input-checkbox" />Semirhage</label>
+                <label>
+                    <input name="favourite-forsaken" value="mesaana" type="checkbox"
+                        class="input-checkbox" />Mesaana</label>
+                <label>
+                    <input name="favourite-forsaken" value="graendal" type="checkbox"
+                        class="input-checkbox" />Graendal</label>
+                <label>
+                    <input name="favourite-forsaken" value="moghedien" type="checkbox"
+                        class="input-checkbox" />Moghedien</label>
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
