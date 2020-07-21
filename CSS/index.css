@@ -8,6 +8,12 @@
     --main-color: #FFF2F1;
     --secondary-color: #A69658;
     --transition-color: #404E4F;
+    --transition-color-hover: #626F6F;
+    --input-padding: 0.4rem 0 0.4rem 0;
+    --header-font-size: 2.4rem;
+    --subheader-font-size: 1.8rem;
+    --default-font-size: 1.6rem;
+    --small-font-size: 1.4rem;
 }
 
 body {
@@ -27,7 +33,7 @@ header {
 }
 
 header p {
-    font-size: 2.4rem;
+    font-size: var(--header-font-size);
     line-height: 2.4rem;
 }
 
@@ -45,30 +51,56 @@ main {
     margin-right: auto;
 
     padding: 2.4rem;
+    width: 80vw;
 }
 
-#name-label, #email-label, #number-label, .form-group p {
+input[type="checkbox"]:hover, input[type="radio"]:hover {
+    transform: scale(1.2);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--transition-color-hover);
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+}
+
+.form-group p {
     font-weight: bold;
+    margin: 0 0 0.5rem 0;
 }
 
-.form-group input[type=text], input[type=email], input[type=number] {
+.optional {
+    font-size: var(--small-font-size);
+    font-style: italic;
+}
+
+.form-group #name-label, #email-label, #number-label {
+    font-weight: bold;
+    margin: 0 0 0.5rem 0;
+}
+
+.instruction-text {
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 1.6rem 0 1rem 0;
+}
+
+.form-group input {
+    font-size: var(--default-font-size);
+    padding: var(--input-padding);
+}
+
+.form-group input[type="text"], input[type="email"], input[type="number"] {
     display: block;
     width: 100%;
 }
 
-.form-group textarea {
+.form-group select {
+    font-size: var(--default-font-size);
+    padding: var(--input-padding);
     width: 100%;
-    min-height: 10rem;
-    resize: vertical;
-}
-
-.form-group button {
-    margin-top: 1.6rem;
-    background-color: var(--transition-color);
-    color: #FFFFFF;
-    font-size: 1.8rem;
-    min-width: 10rem;
-    min-height: 4rem;
 }
 
 .radio-container {
@@ -79,15 +111,52 @@ main {
 
 .radio-container p {
     grid-area: 1 / 1 / 1 / span 5;
-    margin: 1rem;
 }
 
 .checkbox-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
 }
 
+.form-group textarea {
+    font-size: var(--default-font-size);
+    width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+}
 
+.form-group button {
+    margin-top: 1.6rem;
+    background-color: var(--transition-color);
+    color: #FFFFFF;
+    font-size: var(--subheader-font-size);
+    min-width: 10rem;
+    min-height: 4rem;
+}
 
+@media only screen and (min-width: 800px) {
+    main {
+        /* Adjust size of the main border */
+        border: 0.7rem;
+        border-style: solid;
+        border-radius: 2rem;
+        border-color: var(--transition-color);
+        background-color: var(--main-color);
 
+        /* Align all text to left, allows room for input controls */
+        text-align: left;
+    }
+
+    .radio-container {
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    .radio-container p {
+        grid-area: 1 / 1 / 1 / span 10;
+    }
+
+    .submit-group {
+        text-align: center;
+    }
+}
