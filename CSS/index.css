@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* Resize default font for browsers from 16px to 10px */
+    font-size: 62.5%;
+
+    /* CSS Variables */
+    --main-color: #FFF2F1;
+    --secondary-color: #A69658;
+    --transition-color: #404E4F;
+}
+
+body {
+    /* Set default size of font for page back to 16px */
+    /* This will allow easy conversion of rem values */
+    font-size: 1.6rem;  
+    font-family: 'Assistant', sans-serif;
+    background-color: var(--secondary-color);
+}
+
+header {
+    text-align: center;
+}
+
+#title {
+    font-size: 3.6rem;
+}
+
+header p {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+main {
+    /* Style the border */
+    border: 0.5rem;
+    border-style: solid;
+    border-radius: 2rem;
+    border-color: var(--transition-color);
+    background-color: var(--main-color);
+
+    /* Center the element and the text within */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2.4rem;
+}
+
+#name-label, #email-label, #number-label, .form-group p {
+    font-weight: bold;
+}
+
+.form-group input[type=text], input[type=email], input[type=number] {
+    display: block;
+    width: 100%;
+}
+
+.form-group textarea {
+    width: 100%;
+    min-height: 10rem;
+    resize: vertical;
+}
+
+.form-group button {
+    margin-top: 1.6rem;
+    background-color: var(--transition-color);
+    color: #FFFFFF;
+    font-size: 1.8rem;
+    min-width: 10rem;
+    min-height: 4rem;
+}
+
+.radio-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;    
+}
+
+.radio-container p {
+    grid-area: 1 / 1 / 1 / span 5;
+    margin: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+
+
+
