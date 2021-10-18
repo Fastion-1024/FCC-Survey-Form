@@ -1,0 +1,10 @@
+{
+    "name": "fcc-survey-form",
+    "version": "0.1.0",
+    "private": true,
+    "description": "Responsive Web Design Projects - Build a Survey Form",
+    "scripts": {},
+    "dependencies": {
+        "bootstrap": "^5.1.3"
+    }
+}
